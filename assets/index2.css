@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        Segoe UI,
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        Apple Color Emoji,
+        Segoe UI Emoji,
+        Segoe UI Symbol;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+:root {
+    --active-color: #6d79d1;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    max-width: 250px;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: 24px;
+}
+
+.sidebar>h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    color: #000;
+    padding-left: 12px;
+    height: 32px;
+    text-decoration: none;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+}
+
+.menu-item:hover {
+    color: var(--active-color);
+    background-color: #f6f6f6;
+    border-radius: 8px;
+}
+
+.menu-item-active {
+    color: var(--active-color) !important;
+    border: 1px solid var(--active-color);
+    border-radius: 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--active-color);
+}
+
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: .5rem;
+    right: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hamburger {
+    position: relative;
+    top: calc(50% - 2px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+}
+
+.hamburger>span,
+.hamburger>span::before,
+.hamburger>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 99px;
+    background-color: #fff;
+    transition-duration: .25s;
+}
+
+.hamburger>span::before {
+    content: '';
+    top: -8px;
+}
+
+.hamburger>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu-toggle.is-active .hamburger>span {
+    transform: rotate(45deg);
+}
+
+.menu-toggle.is-active .hamburger>span::before {
+    transform: rotate(0deg);
+    top: 0;
+}
+
+.menu-toggle.is-active .hamburger>span::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.iframe {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .content {
+        padding-top: 4rem;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 100%;
+        height: 100vh;
+        max-width: 250px;
+        transition: 0.1s linear;
+    }
+
+    .sidebar.is-active {
+        left: 0;
+    }
+}
