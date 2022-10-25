@@ -5,58 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <main class="main">
-        <div class="menu">
-            <div class="title">
-                <h1>Title</h1>
+    <div class="app">
+        <aside class="sidebar">
+            <h1>KAXEL</h1>
+            <nav class="menu">
+                <div class="parent">
+                    Element Form
+                    <a href="inputs.html" target="iframe" class="menu-item">Inputs</a>
+                    <a href="selects.html" target="iframe" class="menu-item">Selects</a>
+                    <a href="#" target="iframe" class="menu-item">Check Box</a>
+                    <a href="#" target="iframe" class="menu-item">Radio Button</a>
+                </div>
+                <div class="parent">
+                    Tables
+                    <a href="#" class="menu-item">Table</a>
+                    <a href="#" class="menu-item">Table 2</a>
+                </div>
+                <div class="parent">
+                    General Elements
+                    <a href="#" class="menu-item">Tabs</a>
+                    <a href="#" class="menu-item">Progress bar</a>
+                    <a href="#" class="menu-item">List</a>
+                </div>
+                <div class="parent">
+                    Buttons
+                    <a href="#" class="menu-item">Button</a>
+                    <a href="#" class="menu-item">Button 2</a>
+                    <a href="#" class="menu-item">Button 3</a>
+                </div>
+            </nav>
+        </aside>
+        <main class="content">
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                </div>
             </div>
-            <div class="parent">
-                <strong>Element Form</strong>
-                <a href="inputs.html" target="iframe" class="child ">Inputs</a>
-                <a href="selects.html" target="iframe" class="child">Selects</a>
-                <a href="#" target="iframe" class="child">Check Box</a>
-                <a href="#" target="iframe" class="child">Radio Button</a>
-            </div>
-            <div class="parent">
-                <strong>Tables</strong>
-                <a href="#" class="child">Table</a>
-                <a href="#" class="child">Table 2</a>
-            </div>
-            <div class="parent">
-                <strong>General Elements</strong>
-                <a href="#" class="child">Tabs</a>
-                <a href="#" class="child">Progress bar</a>
-                <a href="#" class="child">List</a>
-            </div>
-            <div class="parent">
-                <strong>Buttons</strong>
-                <a href="#" class="child">Button</a>
-                <a href="#" class="child">Button 2</a>
-                <a href="#" class="child">Button 3</a>
-            </div>
-        </div>
-        <div class="menu-toggle">
-            <div class="hamburger">
-                <span class="bar"></span>
-            </div>
-        </div>
-        <iframe name="iframe" frameborder="0" style="background-color: #fff; width: 100%;"></iframe>
-        <iframe name="iframe" frameborder="0" style="width: 100%;"></iframe>
-    </main>
-    <script>
-        const menuToggle = document.querySelector('.menu');
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('is-active');
-
-        });
-    </script>
+            <iframe class="iframe" name="iframe" frameborder="0""></iframe>
+        </main>
+    </div>
 </body>
 
 </html>
