@@ -1,0 +1,62 @@
+
+
+.input-flotante{
+    margin-top: 15px !important;
+    height: 35px;
+    max-width: 400px;
+    overflow: hidden;
+}
+.input-normal{
+    margin-top: 15px !important;
+}
+
+.label{
+    position: absolute;
+    margin-top: -19px;
+    margin-left: 8px;
+    transition: all 0.3s ease;
+    color: #888;
+}
+
+.input-text{
+    content: "Hola";
+    height: 20px;
+    padding: 6px;
+    background: none;
+    color: rgb(65, 65, 65);
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid rgb(97, 97, 97);
+}
+.input-text:disabled{
+    color: white;
+    
+    border: 2px solid rgb(200, 200, 200);
+}
+.input-text:not(:disabled):read-only{
+    color: rgb(137, 137, 137);
+    border: 2px solid rgb(144, 144, 144);
+}
+
+.input-flotante .input-text{
+    position: absolute;
+}
+.input-flotante label{
+    margin-top: 9px;
+    position: absolute;
+    margin-left: 8px;
+    transition: all 0.3s ease;
+    color: #888;
+}
+.input-flotante .input-text:focus:not(:disabled)+ label{
+    color: #1cb7de;
+}
+.input-flotante .input-text:focus:not(:read-only)+ label,
+.input-flotante .input-text:not(:disabled):not(:placeholder-shown)+ label{
+    transform: translateY(-170%);
+    font-size: 12px;
+}
+
+.input-text:focus:not(:disabled){
+    border: 2px solid #1cb7de;
+}
