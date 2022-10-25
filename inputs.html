@@ -4,18 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="assets/inputs.css">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/kaxel.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body>
-    <div>
+    <main class="intro">
+        <header class="m-b-3">
+            <h1>Inputs</h1>
+            <p>Personalice los inputs con CSS personalizado que cambia la apariencia inicial del elemento.</p>
+        </header>
+        <section>
+            <div class="component">
+                <header class="m-b-3">
+                    <h2>Input</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
+                        sint,
+                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
+                        accusantium voluptatem!</p>
+                </header>
+                <div class="select-component">
+                    <div class="display">
+                        <input class="input-text an-25" placeholder="Default Input" type="text">
+                    </div>
+                    <div class="pre-code">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="code">
+                        <!--Inert code without wite space-->
+                        <pre><code>    
+    &lt;input class="input-text an-25" placeholder="Default Input" type="text"&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="component">
+                <header class="m-b-3">
+                    <h2>Disabled Input</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
+                        sint,
+                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
+                        accusantium voluptatem!</p>
+                </header>
+                <div class="select-component">
+                    <div class="display">
+                        <input class="input-text an-25" placeholder="Disabled Input" type="text" disabled>
+                    </div>
+                    <div class="pre-code">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="code">
+                        <pre><code>
+    &lt;input class="input-text an-25" placeholder="Disabled Input" type="text" disabled"&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="component">
+                <header class="m-b-3">
+                    <h2>Read-Only Input</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
+                        sint,
+                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
+                        accusantium voluptatem!</p>
+                </header>
+                <div class="select-component">
+                    <div class="display">
+                        <input class="input-text an-25" type="text" value="Read-Only" readonly>
+                    </div>
+                    <div class="pre-code">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="code">
+                        <pre><code>
+    &lt;select name="select" id="select"&gt;
+        &lt;optgroup label="Group 1"&gt;
+            &lt;option value="1"&gt;Option 1&lt;/option&gt;
+            &lt;option value="2"&gt;Option 2&lt;/option&gt;
+            &lt;option value="3"&gt;Option 3&lt;/option&gt;
+        &lt;/optgroup&gt;
+        &lt;optgroup label="Group 2"&gt;
+            &lt;option value="4"&gt;Option 4&lt;/option&gt;
+            &lt;option value="5"&gt;Option 5&lt;/option&gt;
+            &lt;option value="6"&gt;Option 6&lt;/option&gt;
+        &lt;/optgroup&gt;
+    &lt;/select&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <div>
         <h3>Solo lectura flotante</h3>
         <div class="input-flotante">
             <input class="input-text" id="lblNombre3" placeholder=" " type="text" required>
-            <label for="lblNombre3">Nombre2</label>
+            <label for="lblNombre3" class="label">Nombre2</label>
         </div>
         <h3>Solo lectura flotante</h3>
         <div class="input-flotante">
@@ -52,7 +139,7 @@
         <input class="input-text" type="text" disabled>
         <h3>Normal sin etiqueta de solo lectura</h3>
         <input class="input-text" type="text" value="Ejemplo" readonly>
-    </div>
+    </div> -->
 </body>
 
 </html>
