@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/selects.css">
+    <link rel="stylesheet" href="assets/kaxel.css">
+
+    <title>Document</title>
+    <style>
+        option {
+            font-size: 16px;
+            padding: 4px 8px;
+        }
+
+        option:hover {
+            background-color: #d72727;
+            border-radius: 4px;
+            transition: 0.3s ease;
+        }
+
+        option:active {
+            background-color: #cfa9a9;
+            border-radius: 4px;
+            transition: 0.3s ease;
+        }
+
+        /*Change the color when I select an option*/
+        .op:checked {
+            background-color: #d72727;
+            border-radius: 4px;
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div style="padding: 20px; height: 120px;">
+            <select multiple id="browsers" class="select-form al-100"
+                style="background: rgb(255, 255, 255); width: 100%; color: #000;">
+                <option class="op" value="Internet Explorer">Value 1</option>
+                <option value="Firefox">Value 2</option>
+                <option value="Chrome">Value 3</option>
+                <option value="Opera">Value 4</option>
+                <option value="Safari">Value 5</option>
+            </select>
+        </div>
+
+    </form>
+</body>
+
+</html>
