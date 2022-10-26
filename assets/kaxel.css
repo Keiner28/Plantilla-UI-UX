@@ -65,27 +65,23 @@ body {
 .input-normal{
     display: flex;
     flex-direction: column;
-    margin-top: 15px !important;
-    height: 35px;
 }
 
 .label{
-    position: absolute;
-    margin-top: -19px;
     margin-left: 8px;
     transition: all 0.3s ease;
     color: var(--font-color-active);
 }
 
 .input-text{
-    margin-right: 10px;
-    height: 30px;
-    padding-left: 6px;
+    box-sizing: border-box;
+    height: 35px;
+    text-indent: 6px;
     background: none;
     color: var(--font-color-active);
     border-radius: var(--border-radius);
     outline: none;
-    border: var(--border-size) solid var(--border-color-active);
+    border: var(--border-size) solid var(--border-color-active); 
 }
 .input-text:disabled{
     color: var(--font-color-disable);
@@ -108,7 +104,7 @@ body {
 }
 .input-flotante .input-text:focus+ label,
 .input-flotante .input-text:not(:disabled):not(:placeholder-shown)+ label{
-    transform: translateY(-170%);
+    transform: translateY(-150%);
     font-size: 14px;
 }
 
