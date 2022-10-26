@@ -1,3 +1,18 @@
+/*variables*/
+:root {
+    --border-color-active: rgb(97, 97, 97);
+    --border-color-disable: rgb(200, 200, 200);
+    --border-color-readOnly: rgb(144, 144, 144);
+    --font-color-active: rgb(65, 65, 65);
+    --font-color-disable: rgb(146, 146, 146);
+    --font-color-readOnly: rgb(137, 137, 137);
+    --border-size: 2px;
+    --border-radius: 10px;
+}
+body {
+    font-family: sans-serif !important;
+}
+
 /*Tamaños*/
 
 .an-25 {
@@ -42,58 +57,56 @@
 /*Inpust*/
 
 .input-flotante{
+    display: flex;
+    flex-direction: column;
     margin-top: 15px !important;
     height: 35px;
-    max-width: 400px;
-    overflow: hidden;
 }
 .input-normal{
+    display: flex;
+    flex-direction: column;
     margin-top: 15px !important;
+    height: 35px;
 }
 
 .label{
-    font-family: sans-serif !important;
     position: absolute;
     margin-top: -19px;
     margin-left: 8px;
     transition: all 0.3s ease;
-    color: #888;
+    color: var(--font-color-active);
 }
 
 .input-text{
-    font-family: sans-serif !important;
-    height: 20px;
-    padding: 6px;
+    margin-right: 10px;
+    height: 30px;
+    padding-left: 6px;
     background: none;
-    color: rgb(65, 65, 65);
-    border-radius: 10px;
+    color: var(--font-color-active);
+    border-radius: var(--border-radius);
     outline: none;
-    border: 2px solid rgb(97, 97, 97);
+    border: var(--border-size) solid var(--border-color-active);
 }
 .input-text:disabled{
-    color: rgb(146, 146, 146);
-    
-    border: 2px solid rgb(200, 200, 200);
+    color: var(--font-color-disable);
+    border: 2px solid var(--border-color-disable);
 }
 .input-text:not(:disabled):read-only{
-    color: rgb(137, 137, 137);
-    border: 2px solid rgb(144, 144, 144);
+    color: var(--font-color-readOnly);
+    border: 2px solid var(--border-color-readOnly);
 }
 
-.input-flotante .input-text{
-    position: absolute;
-}
 .input-flotante label{
     margin-top: 9px;
     position: absolute;
     margin-left: 8px;
     transition: all 0.3s ease;
-    color: #888;
+    color: var(--font-color-active);
 }
 .input-flotante .input-text:focus:not(:disabled)+ label{
     color: #1cb7de;
 }
-.input-flotante .input-text:focus:not(:read-only)+ label,
+.input-flotante .input-text:focus+ label,
 .input-flotante .input-text:not(:disabled):not(:placeholder-shown)+ label{
     transform: translateY(-170%);
     font-size: 14px;
