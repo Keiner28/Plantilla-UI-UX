@@ -6,126 +6,226 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <link rel="stylesheet" href="assets/style.css"> -->
     <link rel="stylesheet" href="assets/kaxel.css">
+    <link rel="stylesheet" href="assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
-<body style="background-color: white;">
-    <h2>CheckBoxs</h2>
-    <h3>Switches</h3>
-    <div class="check-content">
-        <input class="input-checkbox-switch" type="checkbox" id="checkBoxCustom">
-        <label for="checkBoxCustom">Checkbox</label>
-    </div>
-    <br>
-    <h3>Switches Disabled</h3>
-    <div class="check-content">
-        <input disabled class="input-checkbox-switch" type="checkbox" id="checkBoxCustom">
-        <label for="checkBoxCustom">Checkbox</label>
-    </div>
-    <br>
-    <h3>UnChecked</h3>
-    <div class="check-content">
-        <input class="input-checkbox" type="checkbox" id="checkBox">
-        <label for="checkBox">Checkbox</label>
-    </div>
-    <br>
-    <h3>Checked</h3>
-    <div class="check-content">
-        <input checked class="input-checkbox" type="checkbox" id="checkBoxChecked">
-        <label for="checkBoxChecked">Checkbox</label>
-    </div>
-    <br>
-    <h3>Disabled UnChecked</h3>
-    <div class="check-content">
-        <input disabled class="input-checkbox" type="checkbox" id="checkBoxDisabled">
-        <label for="checkBoxDisabled">Checkbox</label>
-    </div>
-    <br>
-    <h3>Disabled Checked</h3>
-    <div class="check-content">
-        <input disabled checked class="input-checkbox" type="checkbox" id="checkBoxDisabledChecked">
-        <label for="checkBoxDisabledChecked">Checkbox</label>
-    </div>
-    <br>
-    <br>
-    <h2>RadioButton</h2>
-    <h3>UnChecked</h3>
-    <div class="check-content">
-        <input checked class="input-radioButton" type="radio" name="radioButton" id="radioButton">
-        <label for="radioButton">Checkbox</label>
-    </div>
-    <div class="check-content">
-        <input class="input-radioButton" type="radio" name="radioButton" id="radioButton2">
-        <label for="radioButton2">Checkbox</label>
-    </div>
-    <br>
-    <h3>Checked</h3>
-    <div class="check-content">
-        <input checked disabled class="input-radioButton" type="radio" name="radioButtonDisable" id="radioButtonDisable">
-        <label for="radioButton">Checkbox</label>
-    </div>
-    <div class="check-content">
-        <input disabled class="input-radioButton" type="radio" name="radioButtonDisable" id="radioButtonDisable2">
-        <label for="radioButtonDisable2">Checkbox</label>
-    </div>
-    <br>
-    <h3>Checked</h3>
-    <br>
-    <br>
-    
-    
-    <!-- <br>
-    <h3>Checked</h3>
-    <label class="radioButton" for="myRadioButtonId2">
-        <input checked class="input-radioButton" type="radio" name="myRadioButtonName" id="myRadioButtonId2">
-        <div class="radioButton-box"></div>
-        Checkbox
-    </label>
-    <br>
-    <h3>Disabled UnChecked</h3>
-    <label class="radioButton" for="myRadioButtonId3">
-        <input disabled class="input-radioButton" type="radio" name="myRadioButtonName" id="myRadioButtonId3">
-        <div class="radioButton-box"></div>
-        Checkbox
-    </label>
-    <br>
-    <h3>Disabled Checked</h3>
-    <label class="radioButton" for="myRadioButtonId4">
-        <input disabled checked class="input-radioButton" type="radio" name="myRadioButtonName" id="myRadioButtonId4">
-        <div class="radioButton-box"></div>
-        Checkbox
-    </label> -->
-    <!-- <main class="intro">
+<body>
+    <main class="intro">
         <header class="m-b-3">
-            <h1>Inputs</h1>
+            <h1>Checkbox and RadioButtons</h1>
             <p>Personalice los inputs con CSS personalizado que cambia la apariencia inicial del elemento.</p>
         </header>
         <section>
             <div class="component">
                 <header class="m-b-3">
-                    <h2>Input</h2>
+                    <h2>Checkbox</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
                         sint,
                         eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
                         accusantium voluptatem!</p>
                 </header>
                 <div class="select-component">
-                    <div class="display">
-                        <input class="input-text an-25" placeholder="Default Input" type="text">
+                    <div class="display" style="flex-direction: column !important;">
+                        <div class="check-content">
+                            <input class="input-checkbox" type="checkbox" id="checkBox">
+                            <label for="checkBox">Checkbox</label>
+                        </div>
+                        <div class="check-content">
+                            <input checked class="input-checkbox" type="checkbox" id="checkBoxChecked">
+                            <label for="checkBoxChecked">Checkbox Checked</label>
+                        </div>
                     </div>
                     <div class="pre-code">
                         <h5>HTML</h5>
                     </div>
                     <div class="code">
-                        <pre><code>    
-    &lt;input class="input-text an-25" placeholder="Default Input" type="text"&gt;
+                        <!--Inert code without wite space-->
+                        <pre><code>  
+    &lt;div class="check-content"&gt;
+        &lt;input class="input-checkbox" type="checkbox" id="checkBox"&gt;
+        &lt;label for="checkBox"&gt;Checkbox&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="check-content"&gt;
+        &lt;input checked class="input-checkbox" type="checkbox" id="checkBoxChecked"&gt;
+        &lt;label for="checkBoxChecked"&gt;Checkbox Checked&lt;/label&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="component">
+                <header class="m-b-3">
+                    <h2>Checkbox Disabled</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
+                        sint,
+                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
+                        accusantium voluptatem!</p>
+                </header>
+                <div class="select-component">
+                    <div class="display" style="flex-direction: column !important;">
+                        <div class="check-content">
+                            <input disabled class="input-checkbox" type="checkbox" id="checkBoxDisabled">
+                            <label for="checkBoxDisabled">Checkbox Disabled</label>
+                        </div>
+                        <div class="check-content">
+                            <input disabled checked class="input-checkbox" type="checkbox" id="checkBoxDisabledChecked">
+                            <label for="checkBoxDisabledChecked">Checkbox Checked Disabled </label>
+                        </div>
+                    </div>
+                    <div class="pre-code">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="code">
+                        <!--Inert code without wite space-->
+                        <pre><code>  
+    &lt;div class="check-content"&gt;
+        &lt;input disabled class="input-checkbox" type="checkbox" id="checkBoxDisabled"&gt;
+        &lt;label for="checkBoxDisabled"&gt;Checkbox&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="check-content"&gt;
+        &lt;input disabled checked class="input-checkbox" type="checkbox" id="checkBoxDisabledChecked"&gt;
+        &lt;label for="checkBoxDisabledChecked"&gt;Checkbox&lt;/label&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="component">
+                <header class="m-b-3">
+                    <h2>Checkbox Custom</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
+                        sint,
+                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
+                        accusantium voluptatem!</p>
+                </header>
+                <div class="select-component">
+                    <div class="display" style="flex-direction: column !important;">
+                        <div class="check-content">
+                            <input class="input-checkbox-switch" type="checkbox" id="checkBoxCustom">
+                            <label for="checkBoxCustom">Checkbox Custom</label>
+                        </div>
+                    </div>
+                    <div class="pre-code">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="code">
+                        <!--Inert code without wite space-->
+                        <pre><code>  
+    &lt;div class="check-content"&gt;
+        &lt;input class="input-checkbox-switch" type="checkbox" id="checkBoxCustom"&gt;
+        &lt;label for="checkBoxCustom"&gt;Checkbox Custom&lt;/label&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="component">
+                <header class="m-b-3">
+                    <h2>Checkbox Custom Disabled</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
+                        sint,
+                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
+                        accusantium voluptatem!</p>
+                </header>
+                <div class="select-component">
+                    <div class="display" style="flex-direction: column !important;">
+                        <div class="check-content">
+                            <input disabled class="input-checkbox-switch" type="checkbox" id="checkBoxCustomDisabled">
+                            <label for="checkBoxCustomDisabled">Checkbo Custom Disabled</label>
+                        </div>
+                    </div>
+                    <div class="pre-code">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="code">
+                        <!--Inert code without wite space-->
+                        <pre><code>  
+    &lt;div class="check-content"&gt;
+        &lt;input disabled class="input-checkbox-switch" type="checkbox" id="checkBoxCustomDisabled"&gt;
+        &lt;label for="checkBoxCustomDisabled"&gt;Checkbox Custom&lt;/label&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="component">
+                <header class="m-b-3">
+                    <h2>RadioButton</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
+                        sint,
+                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
+                        accusantium voluptatem!</p>
+                </header>
+                <div class="select-component">
+                    <div class="display" style="flex-direction: column !important;">
+                        <div class="check-content">
+                            <input checked class="input-radioButton" type="radio" name="radioButton" id="radioButtonChecked">
+                            <label for="radioButtonChecked">RadioButton Checked</label>
+                        </div>
+                        <div class="check-content">
+                            <input class="input-radioButton" type="radio" name="radioButton" id="radioButton">
+                            <label for="radioButton">RadioButton</label>
+                        </div>
+                    </div>
+                    <div class="pre-code">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="code">
+                        <!--Inert code without wite space-->
+                        <pre><code>  
+    &lt;div class="check-content"&gt;
+        &lt;input checked class="input-radioButton" type="radio" name="radioButton" id="radioButtonChecked"&gt;
+        &lt;label for="radioButtonChecked"&gt;RadioButton Checked&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="check-content"&gt;
+        &lt;input class="input-radioButton" type="radio" name="radioButton" id="radioButton"&gt;
+        &lt;label for="radioButton"&gt;RadioButton&lt;/label&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="component">
+                <header class="m-b-3">
+                    <h2>RadioButton Disabled</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
+                        sint,
+                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
+                        accusantium voluptatem!</p>
+                </header>
+                <div class="select-component">
+                    <div class="display" style="flex-direction: column !important;">
+                        <div class="check-content">
+                            <input checked disabled class="input-radioButton" type="radio" name="radioButtonDisable" id="radioButtonDisable">
+                            <label for="radioButtonDisable">RadioButton Checked Disabled</label>
+                        </div>
+                        <div class="check-content">
+                            <input disabled class="input-radioButton" type="radio" name="radioButtonDisable" id="radioButtonDisable2">
+                            <label for="radioButtonDisable2">RadioButton Checked</label>
+                        </div>
+                    </div>
+                    <div class="pre-code">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="code">
+                        <!--Inert code without wite space-->
+                        <pre><code>  
+    &lt;div class="check-content"&gt;
+        &lt;input checked disabled class="input-radioButton" type="radio" name="radioButtonDisable" id="radioButtonDisable"&gt;
+        &lt;label for="radioButtonDisable"&gt;RadioButton Checked Disabled&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="check-content"&gt;
+        &lt;input disabled class="input-radioButton" type="radio" name="radioButtonDisable" id="radioButtonDisable2"&gt;
+        &lt;label for="radioButtonDisable2"&gt;RadioButton Checked&lt;/label&gt;
+    &lt;/div&gt;
                         </code></pre>
                     </div>
                 </div>
             </div>
         </section>
-    </main> -->
+    </main>
 </body>
 
 </html>

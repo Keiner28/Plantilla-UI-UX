@@ -182,6 +182,9 @@ body {
 .input-checkbox:disabled {
     border-color: var(--border-color-disable);
 }
+.input-checkbox:disabled+label {
+    color: var(--font-color-disable);
+}
 
 .input-checkbox:disabled::after {
     color: var(--font-color-disable);
@@ -224,6 +227,9 @@ body {
 
 .input-checkbox-switch:disabled {
     border-color: var(--border-color-disable);
+}
+.input-checkbox-switch:disabled+label {
+    color: var(--font-color-disable);
 }
 
 .input-checkbox-switch:disabled::after {
@@ -280,6 +286,9 @@ body {
 
 .input-radioButton:disabled {
     border-color: var(--border-color-disable);
+}
+.input-radioButton:disabled + label {
+    color: var(--font-color-disable);
 }
 
 .input-radioButton:disabled::after {
