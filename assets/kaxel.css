@@ -82,34 +82,25 @@ body {
     flex-direction: column;
 }
 
-<<<<<<< Updated upstream
-.label{
-=======
 .label {
     position: absolute;
     margin-top: -19px;
->>>>>>> Stashed changes
     margin-left: 8px;
     transition: all 0.3s ease;
     color: var(--font-color-active);
 }
 
-<<<<<<< Updated upstream
-.input-text{
-    box-sizing: border-box;
-    height: 35px;
-    text-indent: 6px;
-=======
 .input-text {
     margin-right: 10px;
-    height: 30px;
-    padding-left: 6px;
->>>>>>> Stashed changes
+    height: 35px;
+    text-indent: 6px;
+    box-sizing: border-box;
+    text-indent: 6px;
     background: none;
     color: var(--font-color-active);
     border-radius: var(--border-radius);
     outline: none;
-    border: var(--border-size) solid var(--border-color-active); 
+    border: var(--border-size) solid var(--border-color-active);
 }
 
 .input-text:disabled {
@@ -133,16 +124,10 @@ body {
 .input-flotante .input-text:focus:not(:disabled)+label {
     color: #1cb7de;
 }
-<<<<<<< Updated upstream
-.input-flotante .input-text:focus+ label,
-.input-flotante .input-text:not(:disabled):not(:placeholder-shown)+ label{
-    transform: translateY(-150%);
-=======
 
 .input-flotante .input-text:focus+label,
 .input-flotante .input-text:not(:disabled):not(:placeholder-shown)+label {
     transform: translateY(-170%);
->>>>>>> Stashed changes
     font-size: 14px;
 }
 

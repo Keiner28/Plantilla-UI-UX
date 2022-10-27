@@ -30,12 +30,7 @@ p {
     --border-radius: 8px;
 }
 
-<<<<<<< Updated upstream
-.select-form {
-    padding: 0 8px;
-    height: 40px !important;
-    width: 100%;
-=======
+
 /*Prueba*/
 
 /*Div donde se encuantran los selects*/
@@ -43,9 +38,9 @@ p {
     position: relative;
     display: flex;
     line-height: 3;
+    height: 100%;
     background: #fff;
     overflow: hidden;
->>>>>>> Stashed changes
     border: var(--border-size) solid var(--border-color-active);
     border-radius: var(--border-radius);
 }
@@ -83,6 +78,7 @@ p {
     background: #fff;
     background-image: none;
     flex: 2;
+    height: 40px !important;
     padding: 0 .5em;
     color: #000;
     cursor: pointer;
@@ -94,9 +90,13 @@ p {
     display: none;
 }
 
+.select-form:hover {
+    background: #f6f6f6
+}
 
 .select-form[multiple] {
     padding: 0px;
+    height: 125px !important;
 }
 
 .multi-select {
