@@ -6,6 +6,7 @@
     --font-color-active: rgb(65, 65, 65);
     --font-color-disable: rgb(146, 146, 146);
     --font-color-readOnly: rgb(137, 137, 137);
+    --color-selected: #1cb7de;
     --border-size: 2px;
     --border-radius: 10px;
 }
@@ -54,7 +55,7 @@ body {
     height: auto !important
 }
 
-/*Inpust*/
+/*Inpust texts*/
 
 .input-flotante{
     display: flex;
@@ -100,7 +101,7 @@ body {
     color: var(--font-color-active);
 }
 .input-flotante .input-text:focus:not(:disabled)+ label{
-    color: #1cb7de;
+    color: var(--color-selected);
 }
 .input-flotante .input-text:focus+ label,
 .input-flotante .input-text:not(:disabled):not(:placeholder-shown)+ label{
@@ -109,5 +110,162 @@ body {
 }
 
 .input-text:focus:not(:disabled){
-    border: 2px solid #1cb7de;
+    border: 2px solid var(--color-selected);
 }
+
+/*CheckBox*/
+
+.check-content{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.input-checkbox{
+    appearance: none;
+    height: 22px;
+    width: 22px;
+    border-radius: 6px;
+    border: 2px solid var(--border-color-active);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.input-checkbox + label{
+    cursor: pointer;
+}
+.input-checkbox::after{
+    content: '\2714';
+    color: var(--color-selected);
+    transform: scale(0);
+    transition: transform 0.2s;
+}
+.input-checkbox:hover{
+    border-color: var(--color-selected);
+}
+.input-checkbox:checked{
+    border-color: var(--color-selected);
+}
+.input-checkbox:checked::after{
+    transform: scale(1);
+}
+.input-checkbox:disabled{
+    border-color: var(--border-color-disable);
+}
+.input-checkbox:disabled::after{
+    color: var(--font-color-disable);
+}
+
+
+.input-checkbox-switch{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    -webkit-appearance: none;
+    outline: none;
+    border: 2px solid var(--border-color-active);
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+.input-checkbox-switch:checked{
+    border-color: var(--color-selected);
+}
+.input-checkbox-switch::after{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    background: var(--border-color-active);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+.input-checkbox-switch:checked::after{
+    background: var(--color-selected);
+    left: 21px;
+}
+.input-checkbox-switch:disabled{
+    border-color: var(--border-color-disable);
+}
+.input-checkbox-switch:disabled::after{
+    background: var(--font-color-disable);
+}
+
+
+
+/*Radio*/
+.input-radioButton{
+    margin: 3px 4px;
+    appearance: none;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color-active);
+    cursor: pointer;
+    margin-right: 5px;
+    outline: none;
+    padding: 2px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s;
+}
+.input-radioButton + label{
+    cursor: pointer;
+}
+.input-radioButton::after{
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: var(--color-selected);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s;
+}
+.input-radioButton:hover{
+    border-color: var(--color-selected);
+}
+.input-radioButton:checked{
+    border-color: var(--color-selected);
+}
+.input-radioButton:checked::after{
+    transform: scale(1);
+}
+.input-radioButton:disabled{
+    border-color: var(--border-color-disable);
+}
+.input-radioButton:disabled::after{
+    background: var(--font-color-disable);
+}
+/*
+ .radioButton-radio::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: var(--color-selected);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+.input-radioButton:checked + .radioButton-radio{
+    border-color: var(--color-selected);
+}
+.input-radioButton:checked + .radioButton-radio::after{
+    transform: scale(1);
+}
+.input-radioButton:disabled + .radioButton-radio{
+    border-color: var(--border-color-disable);
+}
+.input-radioButton:disabled + .radioButton-radio::after{
+    background: var(--border-color-disable);
+
+} */
