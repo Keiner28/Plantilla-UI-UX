@@ -10,6 +10,7 @@
     --border-size: 2px;
     --border-radius: 10px;
 }
+
 body {
     font-family: sans-serif !important;
 }
@@ -32,9 +33,14 @@ body {
     width: 100% !important
 }
 
+.an-100px {
+    width: 100px !important
+}
+
 .an-auto {
     width: auto !important
 }
+
 .al-25 {
     height: 25% !important
 }
@@ -51,49 +57,64 @@ body {
     height: 100% !important
 }
 
+.al-100px {
+    height: 100px !important
+}
+
+.al-125px {
+    height: 125px !important
+}
+
 .al-auto {
     height: auto !important
 }
 
 /*Inpust texts*/
 
-.input-flotante{
+.input-flotante {
     display: flex;
     flex-direction: column;
     margin-top: 15px !important;
     height: 35px;
 }
-.input-normal{
+
+.input-normal {
     display: flex;
     flex-direction: column;
 }
 
-.label{
+.label {
+    position: absolute;
+    margin-top: -19px;
     margin-left: 8px;
     transition: all 0.3s ease;
     color: var(--font-color-active);
 }
 
-.input-text{
-    box-sizing: border-box;
+.input-text {
+    margin-right: 10px;
     height: 35px;
+    text-indent: 6px;
+    box-sizing: border-box;
     text-indent: 6px;
     background: none;
     color: var(--font-color-active);
     border-radius: var(--border-radius);
     outline: none;
-    border: var(--border-size) solid var(--border-color-active); 
+    border: var(--border-size) solid var(--border-color-active);
 }
-.input-text:disabled{
+
+.input-text:disabled {
     color: var(--font-color-disable);
     border: 2px solid var(--border-color-disable);
 }
-.input-text:not(:disabled):read-only{
+
+.input-text:not(:disabled):read-only {
     color: var(--font-color-readOnly);
     border: 2px solid var(--border-color-readOnly);
 }
 
-.input-flotante label{
+.input-flotante label {
     margin-top: 9px;
     position: absolute;
     margin-left: 8px;
@@ -103,9 +124,10 @@ body {
 .input-flotante .input-text:focus:not(:disabled)+ label{
     color: var(--color-selected);
 }
-.input-flotante .input-text:focus+ label,
-.input-flotante .input-text:not(:disabled):not(:placeholder-shown)+ label{
-    transform: translateY(-150%);
+
+.input-flotante .input-text:focus+label,
+.input-flotante .input-text:not(:disabled):not(:placeholder-shown)+label {
+    transform: translateY(-170%);
     font-size: 14px;
 }
 
@@ -245,27 +267,3 @@ body {
 .input-radioButton:disabled::after{
     background: var(--font-color-disable);
 }
-/*
- .radioButton-radio::after{
-    content: '';
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: var(--color-selected);
-    border-radius: 50%;
-    transform: scale(0);
-    transition: transform 0.3s;
-}
-.input-radioButton:checked + .radioButton-radio{
-    border-color: var(--color-selected);
-}
-.input-radioButton:checked + .radioButton-radio::after{
-    transform: scale(1);
-}
-.input-radioButton:disabled + .radioButton-radio{
-    border-color: var(--border-color-disable);
-}
-.input-radioButton:disabled + .radioButton-radio::after{
-    background: var(--border-color-disable);
-
-} */
