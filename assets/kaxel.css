@@ -9,6 +9,7 @@
     --color-selected: #1cb7de;
     --border-size: 2px;
     --border-radius: 10px;
+    --active: #C6D1D3;
 }
 
 body {
@@ -316,7 +317,8 @@ body {
 
 /*hover en la flecha del Select*/
 .select:hover::after {
-    color: rgb(167, 97, 97);
+    color: var(--color-selected);
+    transition: all 0.2s ease;
 }
 
 /*clase de por defecto de los selects*/
@@ -336,7 +338,6 @@ body {
     color: #000;
     cursor: pointer;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .select-form::-ms-expand {
@@ -344,7 +345,7 @@ body {
 }
 
 .select-form:hover {
-    background: #f6f6f6
+    background: #f6f6f6;
 }
 
 .select-form[multiple] {
