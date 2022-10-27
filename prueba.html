@@ -10,36 +10,14 @@
 
     <title>Document</title>
     <style>
-        option {
-            font-size: 16px;
-            padding: 4px 8px;
-        }
 
-        option:hover {
-            background-color: #d72727;
-            border-radius: 4px;
-            transition: 0.3s ease;
-        }
-
-        option:active {
-            background-color: #cfa9a9;
-            border-radius: 4px;
-            transition: 0.3s ease;
-        }
-
-        /*Change the color when I select an option*/
-        .op:checked {
-            background-color: #d72727;
-            border-radius: 4px;
-            transition: 0.3s ease;
-        }
     </style>
 </head>
 
 <body>
-    <form action="">
+    <form action="" style="margin-left: 50px;">
         <div style="padding: 20px; height: 120px;">
-            <select multiple id="browsers" class="select-form al-100"
+            <select multiple id="browsers" size="3" class="select-form al-100"
                 style="background: rgb(255, 255, 255); width: 100%; color: #000;">
                 <option class="op" value="Internet Explorer">Value 1</option>
                 <option value="Firefox">Value 2</option>
@@ -48,7 +26,16 @@
                 <option value="Safari">Value 5</option>
             </select>
         </div>
-
+        <div class="select">
+            <select name="format" id="format">
+                <option selected disabled>Choose a book format</option>
+                <option value="pdf">PDF</option>
+                <option value="txt">txt</option>
+                <option value="epub">ePub</option>
+                <option value="fb2">fb2</option>
+                <option value="mobi">mobi</option>
+            </select>
+        </div>
     </form>
 </body>
 

@@ -9,6 +9,7 @@
     --border-size: 2px;
     --border-radius: 10px;
 }
+
 body {
     font-family: sans-serif !important;
 }
@@ -31,9 +32,14 @@ body {
     width: 100% !important
 }
 
+.an-100px {
+    width: 100px !important
+}
+
 .an-auto {
     width: auto !important
 }
+
 .al-25 {
     height: 25% !important
 }
@@ -50,64 +56,96 @@ body {
     height: 100% !important
 }
 
+.al-100px {
+    height: 100px !important
+}
+
+.al-125px {
+    height: 125px !important
+}
+
 .al-auto {
     height: auto !important
 }
 
 /*Inpust*/
 
-.input-flotante{
+.input-flotante {
     display: flex;
     flex-direction: column;
     margin-top: 15px !important;
     height: 35px;
 }
-.input-normal{
+
+.input-normal {
     display: flex;
     flex-direction: column;
 }
 
+<<<<<<< Updated upstream
 .label{
+=======
+.label {
+    position: absolute;
+    margin-top: -19px;
+>>>>>>> Stashed changes
     margin-left: 8px;
     transition: all 0.3s ease;
     color: var(--font-color-active);
 }
 
+<<<<<<< Updated upstream
 .input-text{
     box-sizing: border-box;
     height: 35px;
     text-indent: 6px;
+=======
+.input-text {
+    margin-right: 10px;
+    height: 30px;
+    padding-left: 6px;
+>>>>>>> Stashed changes
     background: none;
     color: var(--font-color-active);
     border-radius: var(--border-radius);
     outline: none;
     border: var(--border-size) solid var(--border-color-active); 
 }
-.input-text:disabled{
+
+.input-text:disabled {
     color: var(--font-color-disable);
     border: 2px solid var(--border-color-disable);
 }
-.input-text:not(:disabled):read-only{
+
+.input-text:not(:disabled):read-only {
     color: var(--font-color-readOnly);
     border: 2px solid var(--border-color-readOnly);
 }
 
-.input-flotante label{
+.input-flotante label {
     margin-top: 9px;
     position: absolute;
     margin-left: 8px;
     transition: all 0.3s ease;
     color: var(--font-color-active);
 }
-.input-flotante .input-text:focus:not(:disabled)+ label{
+
+.input-flotante .input-text:focus:not(:disabled)+label {
     color: #1cb7de;
 }
+<<<<<<< Updated upstream
 .input-flotante .input-text:focus+ label,
 .input-flotante .input-text:not(:disabled):not(:placeholder-shown)+ label{
     transform: translateY(-150%);
+=======
+
+.input-flotante .input-text:focus+label,
+.input-flotante .input-text:not(:disabled):not(:placeholder-shown)+label {
+    transform: translateY(-170%);
+>>>>>>> Stashed changes
     font-size: 14px;
 }
 
-.input-text:focus:not(:disabled){
+.input-text:focus:not(:disabled) {
     border: 2px solid #1cb7de;
 }
