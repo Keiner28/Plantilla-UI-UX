@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/kaxel.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main class="intro">
+        <header class="m-b-3">
+            <h1>Tables</h1>
+            <p>Personalice las tablas con CSS personalizado que cambia la apariencia inicial del elemento.</p>
+        </header>
+        <section>
+            <div class="component">
+                <header class="m-b-3">
+                    <h2>Table Default</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
+                        sint,
+                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
+                        accusantium voluptatem!</p>
+                </header>
+                <div class="select-component">
+                    <div class="display">
+                        <table class="table an-100">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Departament</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Usuario1</td>
+                                    <td>Usuario1@example.com</td>
+                                    <td>Departamento1</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>2</td>
+                                    <td>Usuario2</td>
+                                    <td>Usuario2@example.com</td>
+                                    <td>Departamento2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Usuario3</td>
+                                    <td>Usuario3@example.com</td>
+                                    <td>Departamento3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pre-code">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="code">
+                        <!--Inert code without wite space-->
+                        <pre><code>
+    &lt;table class="table an-100"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Id&lt;/th&gt;
+                &lt;th&gt;Username&lt;/th&gt;
+                &lt;th&gt;Email&lt;/th&gt;
+                &lt;th&gt;Departament&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Usuario1&lt;/td&gt;
+                &lt;td&gt;Usuario1@example.com;&lt;/td&gt;
+                &lt;td&gt;Departamento1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class="active-row"&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Usuario2&lt;/td&gt;
+                &lt;td&gt;Usuario2@example.com;&lt;/td&gt;
+                &lt;td&gt;Departamento2&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Usuario3&lt;/td&gt;
+                &lt;td&gt;Usuario3@example.com;&lt;/td&gt;
+                &lt;td&gt;Departamento3&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+                            </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="component">
+                <header class="m-b-3">
+                    <h2>Table stripped</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
+                        sint,
+                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
+                        accusantium voluptatem!</p>
+                </header>
+                <div class="select-component">
+                    <div class="display">
+                        <table class="table table-striped an-100">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Departament</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Usuario1</td>
+                                    <td>Usuario1@example.com</td>
+                                    <td>Departamento1</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>2</td>
+                                    <td>Usuario2</td>
+                                    <td>Usuario2@example.com</td>
+                                    <td>Departamento2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Usuario3</td>
+                                    <td>Usuario3@example.com</td>
+                                    <td>Departamento3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Usuario4</td>
+                                    <td>Usuario4@example.com</td>
+                                    <td>Departamento4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pre-code">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="code">
+                        <pre><code>
+    &lt;table class="table table-striped an-100"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Id&lt;/th&gt;
+                &lt;th&gt;Username&lt;/th&gt;
+                &lt;th&gt;Email&lt;/th&gt;
+                &lt;th&gt;Departament&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Usuario1&lt;/td&gt;
+                &lt;td&gt;Usuario1@example.com;&lt;/td&gt;
+                &lt;td&gt;Departamento1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class="active-row"&gt; 
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Usuario2&lt;/td&gt;
+                &lt;td&gt;Usuario2@example.com;&lt;/td&gt;
+                &lt;td&gt;Departamento2&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Usuario3&lt;/td&gt;
+                &lt;td&gt;Usuario3@example.com;&lt;/td&gt;
+                &lt;td&gt;Departamento3&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+                            </code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
