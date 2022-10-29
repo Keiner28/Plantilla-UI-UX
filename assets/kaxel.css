@@ -1,16 +1,21 @@
 /*variables*/
 :root {
+    --color-submit: #0d6efc;
+    --color-cancel: #bb2d3a;
+    --color-reset: #5c636b;
     --border-color-active: rgb(97, 97, 97);
     --border-color-disable: rgb(200, 200, 200);
     --border-color-readOnly: rgb(144, 144, 144);
     --font-color-active: rgb(65, 65, 65);
     --font-color-disable: rgb(146, 146, 146);
     --font-color-readOnly: rgb(137, 137, 137);
+    --font-color-button: rgb(216, 216, 216);
     --color-selected: #1cb7de;
     --border-size: 2px;
     --border-radius: 10px;
     --active: #C6D1D3;
     --color-header: #dde7e9;
+    --tama: 0px;
 }
 
 body {
@@ -452,4 +457,148 @@ body {
     background-color: #dae6e9;
     cursor: pointer;
     transition: ease 0.2s
+}
+
+/*Buttons*/
+
+.boton{
+    border-radius: var(--border-radius);
+    border: none;
+    background: none;
+    padding: 0 15px;
+    font-size: 14px;
+    height: 35px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.boton:disabled{
+    cursor: default;
+    opacity: 0.4;
+}
+
+.boton-submit{
+    background-color: var(--color-submit);
+    border: var(--border-size) solid var(--color-submit);
+    color: var(--font-color-button);
+    transition: ease-in-out 0.2s;
+}
+.boton-cancel{
+    background-color: var(--color-cancel);
+    border: var(--border-size) solid var(--color-cancel);
+    color: var(--font-color-button);
+    transition: ease-in-out 0.2s;
+}
+.boton-reset{
+    background-color: var(--color-reset);
+    border: var(--border-size) solid var(--color-reset);
+    color: var(--font-color-button);
+    transition: ease-in-out 0.2s;
+}
+.boton-border-submit{
+    border: var(--border-size) solid var(--color-submit);
+    color: var(--color-submit);
+    transition: ease-in-out 0.2s;
+}
+.boton-border-cancel{
+    border: var(--border-size) solid var(--color-cancel);
+    color: var(--color-cancel);
+    transition: ease-in-out 0.2s;
+}
+.boton-border-reset{
+    border: var(--border-size) solid var(--color-reset);
+    color: var(--color-reset);
+    transition: ease-in-out 0.2s;
+}
+.boton-submit:hover:not(:disabled), .boton-cancel:hover:not(:disabled), .boton-reset:hover:not(:disabled){
+    opacity: 0.7;
+    transition: ease 0.5s;
+}
+.boton-border-submit:hover:not(:disabled){
+    color: var(--font-color-button);
+    background: var(--color-submit);
+    opacity: 0.7;
+    transition: ease 0.5s;
+}
+.boton-border-cancel:hover:not(:disabled){
+    background: var(--color-cancel);
+    color: var(--font-color-button);
+    opacity: 0.7;
+    transition: ease 0.5s;
+}
+.boton-border-reset:hover:not(:disabled){
+    background: var(--color-reset);
+    color: var(--font-color-button);
+    opacity: 0.7;
+    transition: ease 0.5s;
+}
+.boton-large{
+    height: 40px;
+    font-size: 16px;
+}
+.boton-small{
+    height: 30px;
+    font-size: 12px;
+}
+.boton-medium{
+    height: 35px;
+    font-size: 14px;
+}
+.boton-group, .btn-group-vertical {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
+.boton-group .boton:not(:last-child){
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.boton-group .boton:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.boton-group>.boton:not(:first-child) {
+    margin-left: -2px;
+}
+
+/*Dropdowns*/
+
+.dropdown {
+    position: relative;
+}
+.boton-dropdown {
+    white-space: nowrap;
+}
+.boton-dropdown::after {
+    display: inline-block;
+    content: "\25BC";
+    transition: ease 0.1s;
+}
+.boton-dropdown:focus::after {
+    rotate: 180deg;
+}
+.dropdown-list {
+    position: absolute;
+    z-index: 1000;
+    padding: 10px 0;
+    margin: 0;
+    width: auto;
+    display: none;
+    font-size: 14px;
+    list-style: none;
+    background-color: #fff;
+    border: 2px solid var(--font-color-active);
+    background-clip: padding-box;
+    border-radius: var(--border-radius);
+}
+.componente-dropdown {
+    display: block;
+    padding: 4px 16px;
+    color: #212529;
+    text-decoration: none;
+}
+.componente-dropdown:hover, .componente-dropdown:focus {
+    background-color: #dae6e9;
+}
+.boton-dropdown:focus + .dropdown-list {
+    display: block;
 }
