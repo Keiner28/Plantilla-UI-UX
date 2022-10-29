@@ -695,6 +695,13 @@ body {
     background-color: #e6e6e6;
 }
 
+.tab:disabled+label {
+    background-color: #eee;
+    color: #aaa;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 /* Adding a border to the bottom of the label and changing the color of the label. */
 .tab:checked+label {
     border-bottom: 2px solid #1cb7de;
