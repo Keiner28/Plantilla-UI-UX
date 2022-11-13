@@ -15,16 +15,35 @@
     <main class="intro">
         <header class="m-b-3">
             <h1>Checkbox and RadioButtons</h1>
-            <p>Personalice los inputs con CSS personalizado que cambia la apariencia inicial del elemento.</p>
+            <p>Personalice los inputs con CSS personalizado que cambia la apariencia inicial del elemento.
+                Para la personalización de los componentes existen dos estilos de Check Box. Cada uno de estos tiene
+                diferentes características que
+                al usar las clases correspondientes obtendrán la personalización.
+            </p>
+            <h3>Checkbox</h3>
+            <h4>Estilo 1</h4>
+            <p>Este es el estilo por defecto de los checkbox. Para personalizarlo se deben
+                agregar las clases <code>.check-content</code> al elemento <code>div</code> y
+                <code>.input-checkbox</code> al
+                elemento <code>input</code>.
+            </p>
+            <h4>Estilo 2</h4>
+            <p>Este es el estilo personalizado de los checkbox. Para personalizarlo se deben
+                agregar las clases <code>.check-content</code> al elemento <code>div</code> y
+                <code>.input-checkbox-switch</code> al
+                elemento <code>input</code>.
+            </p>
+            <h3>Radio Buttons</h3>
+            <p>Para personalizar los radio buttons se deben agregar las clases <code>.check-content</code> al elemento
+                <code>div</code> y <code>.input-radioButton</code> al elemento <code>input</code>.
         </header>
         <section>
             <div class="component">
                 <header class="m-b-3">
                     <h2>Checkbox</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>Estos elementos solo tienen la clase <code>.check-content</code> en el <code>div</code> y la
+                        clase <code>.input-checkbox</code> en el elemento <code>input</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display" style="flex-direction: column !important;">
@@ -58,10 +77,10 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>Checkbox Disabled</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>Estos elementos solo tienen la clase <code>.check-content</code> en el <code>div</code> y la
+                        clase <code>.input-checkbox</code> en el elemento <code>input</code> mas la propiedad
+                        <code>disabled</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display" style="flex-direction: column !important;">
@@ -95,10 +114,10 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>Checkbox Custom</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Estos elementos solo tienen la clase <code>.check-content</code> en el <code>div</code> y la
+                        clase <code>.input-checkbox-switch</code> en el elemento <code>input</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display" style="flex-direction: column !important;">
@@ -124,10 +143,11 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>Checkbox Custom Disabled</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Estos elementos solo tienen la clase <code>.check-content</code> en el <code>div</code> y la
+                        clase <code>.input-checkbox-switch</code> en el elemento <code>input</code> mas la propiedad
+                        <code>disabled</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display" style="flex-direction: column !important;">
@@ -153,15 +173,16 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>RadioButton</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Estos elementos solo tienen la clase <code>.radio-content</code> en el <code>div</code> y la
+                        clase <code>.input-radioButton</code> en el elemento <code>input</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display" style="flex-direction: column !important;">
                         <div class="check-content">
-                            <input checked class="input-radioButton" type="radio" name="radioButton" id="radioButtonChecked">
+                            <input checked class="input-radioButton" type="radio" name="radioButton"
+                                id="radioButtonChecked">
                             <label for="radioButtonChecked">RadioButton Checked</label>
                         </div>
                         <div class="check-content">
@@ -190,19 +211,22 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>RadioButton Disabled</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Estos elementos solo tienen la clase <code>.radio-content</code> en el <code>div</code> y la
+                        clase <code>.input-radioButton</code> en el elemento <code>input</code> mas la propiedad
+                        <code>disabled</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display" style="flex-direction: column !important;">
                         <div class="check-content">
-                            <input checked disabled class="input-radioButton" type="radio" name="radioButtonDisable" id="radioButtonDisable">
+                            <input checked disabled class="input-radioButton" type="radio" name="radioButtonDisable"
+                                id="radioButtonDisable">
                             <label for="radioButtonDisable">RadioButton Checked Disabled</label>
                         </div>
                         <div class="check-content">
-                            <input disabled class="input-radioButton" type="radio" name="radioButtonDisable" id="radioButtonDisable2">
+                            <input disabled class="input-radioButton" type="radio" name="radioButtonDisable"
+                                id="radioButtonDisable2">
                             <label for="radioButtonDisable2">RadioButton Checked</label>
                         </div>
                     </div>

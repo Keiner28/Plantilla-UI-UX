@@ -18,6 +18,15 @@ p {
         Segoe UI Symbol;
 }
 
+p {
+    text-align: justify;
+}
+
+h4 {
+    margin: 0;
+    margin-top: 8px;
+}
+
 :root {
     --primary-color: #f00;
     --secondary-color: #0f0;

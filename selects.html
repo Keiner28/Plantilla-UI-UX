@@ -14,20 +14,24 @@
     <main class="intro">
         <header class="m-b-3">
             <h1>Selects</h1>
-            <p>Personalice los selects con CSS personalizado que cambia la apariencia inicial del elemento.</p>
+            <p>Personalice los selects con CSS personalizado que cambia la apariencia inicial del elemento.
+                Para la personalización de los componentes se hace uso de dos clases de css, cada uno de estos tiene
+                diferentes características que al usar las clases correspondientes obtendrán la personalización.
+            </p>
         </header>
         <section>
             <div class="component">
                 <header class="m-b-3">
                     <h2>Select Default</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Este es elemento select por defecto para personalizarlo se hace uso de la clase
+                        <code>.select</code> en el elemento <code>div</code> y <code>.select-form</code> en el elemento
+                        <code>select</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display">
-                        <div class="select an-100 al-100">
+                        <div class="select an-25 al-100">
                             <select class="select-form" name="select">
                                 <option selected disabled>Selected a value</option>
                                 <option value="1">Option 1</option>
@@ -57,14 +61,15 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>Select Grouped</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Este es elemento select agrupado para personalizarlo se hace uso de la clase
+                        <code>.select</code> en el elemento <code>div</code> y <code>.select-form</code> en el elemento
+                        <code>select</code>, para agrupar los elementos se hace uso del elemento <code>optgroup</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display">
-                        <div class="select an-100 al-100">
+                        <div class="select an-25 al-100">
                             <select class="select-form" name="select">
                                 <optgroup label="Group 1">
                                     <option value="1">Option 1</option>
@@ -102,15 +107,18 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>Select Multiple</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Este es elemento select multiple para personalizarlo se hace uso de la clase
+                        <code>.multi-select</code> en el elemento <code>div</code> y <code>.select-form</code> en el
+                        elemento
+                        <code>select</code> para hacer el selecta de solo lectura se la agrega la propierdad
+                        <code>multiple</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display al-125px">
                         <!--Select Multiple-->
-                        <div class="multi-select an-100 al-100">
+                        <div class="multi-select an-25 al-100">
                             <select class="select-form" name="select" multiple>
                                 <option class="op" value="1">Option 1</option>
                                 <option class="op" value="2">Option 2</option>

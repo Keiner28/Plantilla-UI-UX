@@ -13,23 +13,32 @@
 <body>
     <main class="intro">
         <header class="m-b-3">
-            <h1>Checkbox and RadioButtons</h1>
-            <p>Personalice los inputs con CSS personalizado que cambia la apariencia inicial del elemento.</p>
+            <h1>Botones</h1>
+            <p>
+                Los botones son elementos de interacción que permiten al usuario realizar una acción. Los botones pueden
+                ser
+                de diferentes tipos, como, por ejemplo: botones para form, botones de navegación, botones de selección,
+                etc.
+            </p>
         </header>
         <section>
             <div class="component">
                 <header class="m-b-3">
-                    <h2>Buttons</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <h2>Buttons Form</h2>
+                    <p>
+                        Los botones de form son los botones que se utilizan para enviar un formulario. Para crear un
+                        botón de
+                        form, se debe crear un elemento <code>input</code> con la clase <code>.boton</code> y la clase
+                        del tipo.
+                        Para los botones del form que no tienen background, se debe agregar la clase
+                        <code>.boton-border-</code> más el tipo.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display" style="display: block;">
-                        <button type="button" class="boton boton-submit">Submit</button>
-                        <button type="button" class="boton boton-cancel">Cancel</button>
-                        <button type="button" class="boton boton-reset">Reset</button>
+                        <input type="submit" class="boton boton-submit" value="Submit">
+                        <input type="submit" class="boton boton-cancel" value="Submit">
+                        <input type="submit" class="boton boton-reset" value="Submit">
                     </div>
                     <div class="pre-code">
                         <h5>HTML</h5>
@@ -37,17 +46,17 @@
                     <div class="code">
                         <!--Inert code without wite space-->
                         <pre><code>  
-    &lt;button type="button" class="boton boton-submit"&gt;Submit&lt;/button&gt;
-    &lt;button type="button" class="boton boton-cancel"&gt;Cancel&lt;/button&gt;
-    &lt;button type="button" class="boton boton-reset"&gt;Reset&lt;/button&gt;
+    &lt;input type="submit" class="boton boton-submit"&gt;Submit&lt;/input&gt;
+    &lt;input type="submit" class="boton boton-cancel"&gt;Cancel&lt;/input&gt;
+    &lt;input type="submit" class="boton boton-reset"&gt;Reset&lt;/input&gt;
                         </code></pre>
                     </div>
                 </div>
                 <div class="select-component">
                     <div class="display" style="display: block;">
-                        <button type="button" class="boton boton-border-submit">Submit</button>
-                        <button type="button" class="boton boton-border-cancel">Cancel</button>
-                        <button type="button" class="boton boton-border-reset">Reset</button>
+                        <input type="submit" class="boton boton-border-submit" value="Submit">
+                        <input type="submit" class="boton boton-border-cancel" value="Submit">
+                        <input type="submit" class="boton boton-border-reset" value="Submit">
                     </div>
                     <div class="pre-code">
                         <h5>HTML</h5>
@@ -55,9 +64,9 @@
                     <div class="code">
                         <!--Inert code without wite space-->
                         <pre><code>  
-    &lt;button type="button" class="boton boton-border-submit"&gt;Submit&lt;/button&gt;
-    &lt;button type="button" class="boton boton-border-cancel"&gt;Cancel&lt;/button&gt;
-    &lt;button type="button" class="boton boton-border-reset"&gt;Reset&lt;/button&gt;
+    &lt;input type="submit" class="boton boton-border-submit"&gt;Submit&lt;/input&gt;
+    &lt;input type="submit" class="boton boton-border-cancel"&gt;Cancel&lt;/input&gt;
+    &lt;input type="submit" class="boton boton-border-reset"&gt;Reset&lt;/input&gt;
                         </code></pre>
                     </div>
                 </div>
@@ -65,10 +74,13 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>Buttons Disabled</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Los botones deshabilitados son los botones que no pueden ser presionados por el usuario. Para
+                        crear un botón deshabilitado, se debe crear un elemento <code>button</code> con la clase
+                        <code>.boton</code> y la clase del tipo. Para los botones deshabilitados que no tienen
+                        background, se debe agregar la clase <code>.boton-border-</code> más el tipo. y la propiedad
+                        <code>disabled</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display" style="display: block;">
@@ -110,13 +122,16 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>Buttons Size</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Estos botones son de diferentes tamaños. Para crear un botón de distintos
+                        tamaños, se debe crear un elemento <code>button</code> con la clase <code>.boton</code> y la
+                        clase del tipo, más la clase del tamaño.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display" style="align-items: center; display: block;">
+
+                        <input type="submit" class="boton boton-submit boton-large">
                         <button type="button" class="boton boton-submit boton-large">Large Button</button>
                         <button type="button" class="boton boton-submit boton-medium">Medium Button</button>
                         <button type="button" class="boton boton-submit boton-small">Small Button</button>
@@ -136,11 +151,13 @@
             </div>
             <div class="component">
                 <header class="m-b-3">
-                    <h2>Groups</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <h2>Buttons Groups</h2>
+                    <p>
+                        Los botones agrupados son los botones que se encuentran en un mismo contenedor. Para
+                        crear un botón agrupado, se debe crear un elemento <code>div</code> con la clase
+                        <code>.boton-group</code> y dentro de este elemento se deben crear los botones con la
+                        clase <code>.boton</code> y la clase del tipo.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display">
@@ -187,11 +204,17 @@
             </div>
             <div class="component">
                 <header class="m-b-3">
-                    <h2>Buttons Size</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <h2>Button Dropdown</h2>
+                    <p>
+                        Los botones desplegables son los botones que tienen un menú desplegable. Para crear un
+                        botón desplegable, se debe crear un elemento <code>div</code> con la clase
+                        <code>.dropdown</code> y dentro de este elemento se debe crear un elemento
+                        <code>button</code> con la clase <code>.boton</code> y la clase del tipo más la clase
+                        <code>boton-dropdown</code> y un elemento
+                        <code>ul</code> con la clase <code>.dropdown-list</code> y dentro de este
+                        elemento se deben crear los elementos <code>li</code> con elementos <code>a</code> con la clase
+                        <code>.componente-dropdown</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display" style="overflow-y: inherit;">

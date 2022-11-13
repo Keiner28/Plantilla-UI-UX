@@ -14,16 +14,32 @@
     <main class="intro">
         <header class="m-b-3">
             <h1>Inputs</h1>
-            <p>Personalice los inputs con CSS personalizado que cambia la apariencia inicial del elemento.</p>
+            <p>Personalice los inputs con CSS personalizado que cambia la apariencia inicial del elemento. Para la
+                personalización de los componentes existen tres estilos. Cada uno de estos tiene diferentes
+                características que al usar las clases correspondientes obtendrán la personalización.
+            </p>
+            <h4>Estilo 1</h4>
+            <p>Este estilo es el más simple de todos. Para
+                utilizarlo solo se debe agregar la clase <code>.input-text</code> al elemento <code>input</code>.
+            </p>
+            <h4>Estilo 2</h4>
+            <p>Para este estilo es necesario agregar otros componentes como <code>div</code> y <code>label</code> para
+                dar el estilo al componente se deben usar las clases
+                <code>.input-normal</code> y <code>.input-text</code>.
+            </p>
+            <h4>Estilo 3</h4>
+            <p>Para este estilo es necesario agregar otros componentes como <code>div</code> y <code>label</code> para
+                dar el estilo al componente se deben usar las clases
+                <code>.input-flotante</code> y <code>.input-text</code>.
+            </p>
         </header>
         <section>
             <div class="component">
                 <header class="m-b-3">
-                    <h2>Input</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <h2>Inputs Predeterminados</h2>
+                    <p>Estos elementos solo tienen cada una de las clases de los estilos mencionados anteriormente más
+                        <code>type="text"</code>.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display">
@@ -43,7 +59,7 @@
                     <div class="display">
                         <div class="input-normal an-25">
                             <label class="label">Defaul Input</label>
-                            <input class="input-text" placeholder="Defaul Input" type="text">
+                            <input class="input-text" type="text">
                         </div>
                     </div>
                     <div class="pre-code">
@@ -54,7 +70,7 @@
                         <pre><code>    
     &lt;div class="input-normal an-25"&gt;
         &lt;label class="label"&gt;Defaul Input&lt;/label&gt;
-        &lt;input class="input-text" placeholder="Defaul Input" type="text"&gt;
+        &lt;input class="input-text" type="text"&gt;
     &lt;/div&gt;
                         </code></pre>
                     </div>
@@ -65,7 +81,7 @@
                             <input class="input-text" id="lblInputFloating" placeholder=" " type="text">
                             <label for="lblInputFloating">Defaul Input</label>
                         </div>
-                        
+
                     </div>
                     <div class="pre-code">
                         <h5>HTML</h5>
@@ -84,10 +100,10 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>Disabled Input</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Para deshabilitar un input se debe agregar <code>disabled</code> al elemento
+                        <code>input</code>. Más las clases de los estilos mencionados anteriormente.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display">
@@ -127,7 +143,7 @@
                             <input class="input-text" id="lblDisabledInputFloating" type="text" disabled>
                             <label for="lblDisabledInputFloating">Disabled Input</label>
                         </div>
-                        
+
                     </div>
                     <div class="pre-code">
                         <h5>HTML</h5>
@@ -145,10 +161,10 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>Read-Only Input</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Para hacer un input de solo lectura se debe agregar <code>readonly</code> al elemento
+                        <code>input</code>. Más las clases de los estilos mencionados anteriormente.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display">
@@ -185,7 +201,8 @@
                 <div class="select-component">
                     <div class="display">
                         <div class="input-flotante an-25">
-                            <input class="input-text" id="lblReadOnlyInputFloating" placeholder=" " type="text" readonly>
+                            <input class="input-text" id="lblReadOnlyInputFloating" placeholder=" " type="text"
+                                readonly>
                             <label for="lblReadOnlyInputFloating">Read-Only Input</label>
                         </div>
                     </div>
@@ -205,10 +222,10 @@
             <div class="component">
                 <header class="m-b-3">
                     <h2>Input Password</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur labore quas, cupiditate alias
-                        sint,
-                        eaque exercitationem quod, rem ipsa minima nam possimus dolorum placeat enim aut atque culpa
-                        accusantium voluptatem!</p>
+                    <p>
+                        Para crear un input de tipo password se debe agregar <code>type="password"</code> al elemento
+                        <code>input</code>. Más las clases de los estilos mencionados anteriormente.
+                    </p>
                 </header>
                 <div class="select-component">
                     <div class="display">
@@ -227,7 +244,7 @@
                     <div class="display">
                         <div class="input-normal an-25">
                             <label class="label">Input Password</label>
-                            <input class="input-text" placeholder="Input password" type="password">
+                            <input class="input-text" type="password">
                         </div>
                     </div>
                     <div class="pre-code">

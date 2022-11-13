@@ -386,8 +386,12 @@ body {
 .select-form>optgroup>option {
     display: flex;
     align-items: center;
-    padding: 0.5em 1em !important;
-    font-size: 14px !important;
+    padding: 0.5em 1em;
+    font-size: 14px;
+}
+
+.select-form>optgroup {
+    font-size: 14px;
 }
 
 .select-form>option:checked {
@@ -406,7 +410,9 @@ body {
 
     .input-normal,
     .input-text,
-    .input-flotante {
+    .input-flotante,
+    .select,
+    .multi-select {
         width: 100% !important;
     }
 
@@ -649,6 +655,7 @@ body {
     padding: 10px 25px;
     background-color: transparent;
     position: absolute;
+    display: none;
     width: 100%;
     z-index: -1;
     opacity: 0;
@@ -659,7 +666,7 @@ body {
 }
 
 .tab+label {
-    box-shadow: 0 -1px 0 #eee inset;
+    /* box-shadow: 0 -1px 0 #eee inset; */
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -668,7 +675,7 @@ body {
     font-weight: 700;
     color: #000;
     text-align: center;
-    background-color: #f2f2f2;
+    background-color: var(--color-header);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -692,11 +699,11 @@ body {
 }
 
 .tab+label:hover {
-    background-color: #e6e6e6;
+    background-color: #ffffff;
 }
 
 .tab:disabled+label {
-    background-color: #eee;
+    background-color: var(--color-header);
     color: #aaa;
     opacity: 0.5;
     cursor: not-allowed;
@@ -715,6 +722,7 @@ body {
     transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
     transition: 0.5s opacity ease-in, 0.8s transform ease;
     transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    display: block;
     position: relative;
     top: 0;
     z-index: 100;
@@ -729,6 +737,7 @@ body {
     transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
     transition: 0.5s opacity ease-in, 0.8s transform ease;
     transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    display: block;
     position: relative;
     top: 0;
     z-index: 100;
@@ -743,6 +752,7 @@ body {
     transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
     transition: 0.5s opacity ease-in, 0.8s transform ease;
     transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
+    display: block;
     position: relative;
     top: 0;
     z-index: 100;
@@ -764,7 +774,7 @@ body {
 .progress-porcent {
     width: 25%;
     height: 100%;
-    background: #dbdbdb;
+    background: var(--color-header);
 }
 
 .progress div span {
@@ -786,14 +796,14 @@ body {
 
 .box {
     width: auto;
-    border-bottom: 20px solid #dbdbdb;
+    border-bottom: 20px solid var(--color-header);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .box h2 {
     color: #000;
-    background: #dbdbdb;
+    background: var(--color-header);
     padding: 10px 20px;
     font-size: 20px;
     font-weight: 600;
@@ -850,5 +860,10 @@ body {
 @media (max-width:768px) {
     .box ul li:hover {
         transform: scale(1.04);
+    }
+
+    .tab+label {
+        padding: 0 12px;
+        height: 40px;
     }
 }
